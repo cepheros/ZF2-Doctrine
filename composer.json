@@ -9,7 +9,7 @@
 		}
 	],
 	"license" : [
-		"proprietary"
+		"BSD-3-Clause"
 	],
 	"require" : {
 		"doctrine/doctrine-orm-module" : "master-dev",
