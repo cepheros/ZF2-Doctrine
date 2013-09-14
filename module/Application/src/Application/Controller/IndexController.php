@@ -1,4 +1,9 @@
 <?php
+namespace Application\Controller;
+
+use Core\Controller\CoreController;
+use Zend\View\Model\ViewModel;
+
 /**
  * IndexController
  *
@@ -11,13 +16,6 @@
  * @license    http://mywedding.com.br/licence MIT
  * @link       none
  */
-
-namespace Application\Controller;
-
-use Core\Controller\CoreController;
-use Zend\View\Model\ViewModel;
-
-
 
 class IndexController extends CoreController
 {
@@ -32,8 +30,7 @@ class IndexController extends CoreController
      */
     public function indexAction()
     {
-	
-    	return new ViewModel();
+        return new ViewModel();
 
     }
 

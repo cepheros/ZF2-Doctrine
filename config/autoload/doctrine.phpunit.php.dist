@@ -1,5 +1,4 @@
 <?php
-
 return array(
 		'doctrine' => array(
 				'connection' => array(
@@ -8,7 +7,7 @@ return array(
 								'params' => array(
 										'host'     => 'localhost',
 										'port'     => '3306',
-										'user'     => '',
+										'user'     => 'root',
 										'password' => '',
 										'dbname'   => '',
 								)
