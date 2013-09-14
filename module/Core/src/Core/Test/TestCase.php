@@ -195,4 +195,27 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
         
         return $this->em;
     }
+    
+    protected function createRoles()
+    {
+        
+        $rolenames = array(array('visitante',''),array('sysuser','visitante'),array('sysadmin','sysuser'));
+        foreach($rolenames as $rolename){
+           
+        $roles = new \Core\Entity\System\Roles();
+        $roles->setRoleName($rolename[0]);
+        $roles->setRoleParent($rolename[1]);
+        $this->getEntityManager()->persist($roles);
+        $this->getEntityManager()->flush();
+        
+        }
+        
+        
+        
+    }
+    
+    protected function createResources()
+    {
+        
+    }
 }

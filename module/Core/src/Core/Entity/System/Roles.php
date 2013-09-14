@@ -43,7 +43,7 @@ class Roles extends CoreEntity
 		return $this->id;
 	}
 	
-	public function setId(integer $id) {
+	public function setId($id) {
 		$this->id = $id;
 		return $this;
 	}
@@ -52,7 +52,7 @@ class Roles extends CoreEntity
 		return $this->roleName;
 	}
 	
-	public function setRoleName(string $roleName) {
+	public function setRoleName($roleName) {
 		$this->roleName = $roleName;
 		return $this;
 	}
@@ -65,7 +65,7 @@ class Roles extends CoreEntity
 		}
 	}
 	
-	public function setRoleParent(string $roleParent) {
+	public function setRoleParent($roleParent) {
 		$this->roleParent = $roleParent;
 		return $this;
 	}

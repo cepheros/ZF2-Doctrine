@@ -67,4 +67,29 @@ class AuthControllerTest extends ControllerTest
         $this->assertEquals(404, $response->getStatusCode());
     
     }
+    
+    public function testLoginAction(){
+        
+        $this->routeMatch->setParam('action', 'merda');
+        
+        $result = $this->controller->dispatch($this->request, $this->response);
+        
+        // Verifica o response
+        $response = $this->controller->getResponse();
+        
+        $this->assertEquals(200, $response->getStatusCode());
+        
+        $this->assertInstanceOf('Zend\View\Model\ViewModel', $result);
+        
+        
+        
+        
+    }
+    
+    
+    
+  
+    
+  
+    
 }

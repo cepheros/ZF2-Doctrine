@@ -108,7 +108,7 @@ class Users extends CoreEntity
         return $this->id;
     }
 
-    public function setId(integer $id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -120,7 +120,7 @@ class Users extends CoreEntity
         return $this->fullName;
     }
 
-    public function setFullName(string $fullName)
+    public function setFullName($fullName)
     {
         $this->fullName = $fullName;
 
@@ -132,7 +132,7 @@ class Users extends CoreEntity
         return $this->userName;
     }
 
-    public function setUserName(string $userName)
+    public function setUserName($userName)
     {
         $this->userName = $userName;
 
@@ -144,7 +144,7 @@ class Users extends CoreEntity
         return $this->password;
     }
 
-    public function setPassword(string $password)
+    public function setPassword($password)
     {
         $this->password = $password;
 
@@ -156,7 +156,7 @@ class Users extends CoreEntity
         return $this->role;
     }
 
-    public function setRole(integer $role)
+    public function setRole($role)
     {
         $this->role = $role;
 
@@ -168,7 +168,7 @@ class Users extends CoreEntity
         return $this->userEmail;
     }
 
-    public function setUserEmail(string $userEmail)
+    public function setUserEmail($userEmail)
     {
         $this->userEmail = $userEmail;
 
@@ -180,7 +180,7 @@ class Users extends CoreEntity
         return $this->phoneNumber;
     }
 
-    public function setPhoneNumber(string $phoneNumber)
+    public function setPhoneNumber($phoneNumber)
     {
         $this->phoneNumber = $phoneNumber;
 
@@ -192,7 +192,7 @@ class Users extends CoreEntity
         return $this->dateCreated;
     }
 
-    public function setDateCreated(string $dateCreated)
+    public function setDateCreated($dateCreated)
     {
         $this->dateCreated = $dateCreated;
 
@@ -204,7 +204,7 @@ class Users extends CoreEntity
         return $this->dateLastLogin;
     }
 
-    public function setDateLastLogin(string $dateLastLogin)
+    public function setDateLastLogin($dateLastLogin)
     {
         $this->dateLastLogin = $dateLastLogin;
 
@@ -216,7 +216,7 @@ class Users extends CoreEntity
         return $this->ipLastLogin;
     }
 
-    public function setIpLastLogin(string $ipLastLogin)
+    public function setIpLastLogin($ipLastLogin)
     {
         $this->ipLastLogin = $ipLastLogin;
 
@@ -228,7 +228,7 @@ class Users extends CoreEntity
         return $this->userSignature;
     }
 
-    public function setUserSignature(string $userSignature)
+    public function setUserSignature($userSignature)
     {
         $this->userSignature = $userSignature;
 
@@ -240,7 +240,7 @@ class Users extends CoreEntity
         return $this->recoveryPass;
     }
 
-    public function setRecoveryPass(integer $recoveryPass)
+    public function setRecoveryPass($recoveryPass)
     {
         $this->recoveryPass = $recoveryPass;
 

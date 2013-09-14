@@ -10,9 +10,23 @@ use Doctrine\ORM\EntityManager;
 abstract class CoreController extends AbstractActionController
 {
 	/**
-	 * @var EntityManager
+	 * @return Doctrine\ORM\EntityManager
 	 */
 	protected $em;
+	
+	
+	/**
+	 * @return Zend\Log\Logger
+	 */
+	protected $log;
+	
+	
+	/**
+	 * @return Zend\Cache\StorageFactory
+	 */
+	protected $cache;
+	
+	
 	
 	
     /**
@@ -34,7 +48,7 @@ abstract class CoreController extends AbstractActionController
     /**
      * Return a EntityManager
      *
-     * @return EntityManager
+     * @return Doctrine\ORM\EntityManager;
      */
     protected function getEntityManager()
     {
@@ -45,6 +59,37 @@ abstract class CoreController extends AbstractActionController
     	return $this->em;
     }
     
+    /**
+     * 
+     * Return Zend\Log
+     * @return Zend\Log\Logger
+     * 
+     */
+    protected function getLog(){
+        if ($this->log === null) {
+            $this->log = $this->getServiceLocator()->get('Zend\Log');
+        }
+        
+        return $this->log;
+    }
+    
+    
+    /**
+     *
+     * Return Zend\Log
+     * @return Zend\Cache\StorageFactory
+     *
+     */
+    protected function getCache(){
+        if ($this->cache === null) {
+            $this->cache = $this->getServiceLocator()->get('Cache');
+        }
+    
+        return $this->cache;
+    }
+    
+    
+
     
     
     

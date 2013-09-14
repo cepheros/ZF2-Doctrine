@@ -55,7 +55,7 @@ class Resources extends CoreEntity
 		return $this->resourceName;
 	}
 	
-	public function setResourceName(string $resourceName) {
+	public function setResourceName($resourceName) {
 		$this->resourceName = $resourceName;
 		return $this;
 	}
@@ -64,7 +64,7 @@ class Resources extends CoreEntity
 		return $this->ResourceDescription;
 	}
 	
-	public function setResourceDescription(string $ResourceDescription) {
+	public function setResourceDescription($ResourceDescription) {
 		$this->ResourceDescription = $ResourceDescription;
 		return $this;
 	}

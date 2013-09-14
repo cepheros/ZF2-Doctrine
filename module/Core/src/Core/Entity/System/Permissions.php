@@ -60,7 +60,7 @@ class Permissions extends CoreEntity
 		return $this->id;
 	}
 	
-	public function setId(integer $id) {
+	public function setId($id) {
 		$this->id = $id;
 		return $this;
 	}
@@ -69,7 +69,7 @@ class Permissions extends CoreEntity
 		return $this->idRole;
 	}
 	
-	public function setIdRole(integer $idRole) {
+	public function setIdRole($idRole) {
 		$this->idRole = $idRole;
 		return $this;
 	}
@@ -78,7 +78,7 @@ class Permissions extends CoreEntity
 		return $this->idResource;
 	}
 	
-	public function setIdResource(integer $idResource) {
+	public function setIdResource($idResource) {
 		$this->idResource = $idResource;
 		return $this;
 	}
@@ -88,7 +88,7 @@ class Permissions extends CoreEntity
 		return $this->permission;
 	}
 	
-	public function setPermission(string $permission) {
+	public function setPermission($permission) {
 		$this->permission = $permission;
 		return $this;
 	}
